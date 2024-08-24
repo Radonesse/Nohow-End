@@ -2245,6 +2245,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 513035014}
+    - target: {fileID: 3993912988140848257, guid: 88f8fd172c7e3fa43a8d9c818cc4ce8a, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993912988140848257, guid: 88f8fd172c7e3fa43a8d9c818cc4ce8a, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993912988140848257, guid: 88f8fd172c7e3fa43a8d9c818cc4ce8a, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993912988140848257, guid: 88f8fd172c7e3fa43a8d9c818cc4ce8a, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 900
+      objectReference: {fileID: 0}
     - target: {fileID: 4910280912252816722, guid: 88f8fd172c7e3fa43a8d9c818cc4ce8a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2821,7 +2837,7 @@ PrefabInstance:
       objectReference: {fileID: 931601963}
     - target: {fileID: 4364123034826043834, guid: 5dc1fce8251e8054daa067ce66eda9bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.024862
+      value: 26.6693
       objectReference: {fileID: 0}
     - target: {fileID: 4364123034826043834, guid: 5dc1fce8251e8054daa067ce66eda9bc, type: 3}
       propertyPath: m_LocalPosition.y
