@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ddd4c9cbab63e4b4e8202b57820fa8ec
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LoadText: {instanceID: 0}
+  - Taisiya: {fileID: 2942706363689767694, guid: 6ae225db6316456479ad71346c4132d8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
