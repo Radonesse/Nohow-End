@@ -8,12 +8,12 @@ public class DialogueParent : MonoBehaviour
     public List<string> Phrase;
     public bool IsOnTrigger = false;
     public int Count = 0;
+    public GameObject TextWindow;
     public TextMeshProUGUI Text;
-    public GameObject TextParent;
 
     public void GetText(){
-        // this.Text = (GameObject.Find("/CameraInGameScenes/Diologue/DiologueWindow/DialogueText")).GetComponent<TextMeshProUGUI>();
-        // this.Text = TextParent.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
+        this.TextWindow = GameObject.Find("CameraInGameScenes").transform.GetChild(3).gameObject;
+        this.Text = TextWindow.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
     public DialogueParent(List<string> _Phrase){
@@ -29,6 +29,7 @@ public class DialogueParent : MonoBehaviour
 
     public void OutTrigger(Collider2D other) {
         this.IsOnTrigger = false;
+        Count = 0;
         Debug.Log("End of trigger");
     }
 
@@ -36,19 +37,16 @@ public class DialogueParent : MonoBehaviour
         if(this.IsOnTrigger){
             if(Input.GetKeyDown(KeyCode.Space)){
                 if (this.Count < this.Phrase.Count){
-                    // Debug.Log(this.Text.text);
-                    Debug.Log(this.Phrase[this.Count]);
+                    TextWindow.SetActive(true);
+                    Text.text = this.Phrase[this.Count];
                     this.Count++;
                 }
                 else{
-                    Debug.Log("End of dialogue");
+                    TextWindow.SetActive(false);
                     this.Count = 0;
+                    Debug.Log("End of dialogue");
                 }
             }
         }
     }
-
-    // public void TMPWorkPlease(){
-    //     Debug.Log(this.Text.text);
-    // }
 }

@@ -11,7 +11,6 @@ public class CatDialogue : MonoBehaviour
     }
 
     void Update(){
-        // _CatDialogue.TMPWorkPlease();
         _CatDialogue.Talk();
     }
 
